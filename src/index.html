@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
+  <title>Weather App</title>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-gray-100">
+    <!--main container -->
+<div class="relative bg-white rounded-2xl w-[365px] h-[625px] border-0 shadow-2xl/25">
+    <!-- backgound image -->
+  <div class="you absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[url('assets/background.jpg')] bg-cover bg-center w-[350px] h-[600px] rounded-2xl right-11">
+    <div class="flex text-center items-center justify-between gap-3 m-24 search">
+        <input type="text"  placeholder="enter city name" spellcheck="false" class="bg-white w-[200px] text-center p-2 rounded-4xl font-bold font-sans outline-0 border-0 cursor-pointer ">
+        <button class="cursor-pointer"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+
+     <!-- Time  -->
+
+        <div class=" mx-auto -mt-18 flex flex-col items-center justify-center rounded-4xl text-2xl bg-white/10 backdrop-blur-md border border-white/30 w-20 h-30">
+            <h2 class="date-day month font-bold text-3xl text-gray-800">JULY</h2>
+            <p class="date">16</p>
+        </div>
+
+
+        <!-- Days of the week  -->
+         <div class="flex flex-col items-center justify-center mt-3">
+            <h1 class="text-2xl font-bold tracking-[0.1em] bg-gradient-to-b from-black to-gray-200 text-transparent bg-clip-text"><span class="city inline-block uppercase"> G E R M A N Y </span></h1>
+            <h3 class=" broken text-stone-300 font-sans mt-2">BROKEN CLOUDS</h3>
+         </div>
+
+         <!-- Units ofmeasurement -->
+          <div class="flex items-center justify-center text-white m-9 gap-9">
+            
+            <h3><i class="fa-solid fa-temperature-three-quarters text-pink-200"></i><span class="temp">53°</span></h3>
+
+            <h3><i class="fa-solid fa-wind text-blue-300"></i><span class="wind">3m/s</span></h3>
+            <h3><i class="fa-solid fa-umbrella text-blue-600"></i><span class="humidity">0%</span></h3>
+          </div>
+
+          <!-- Time  -->
+           <div class="flex items-center justify-center text-white font-bold text-2xl mt-2 ">
+            <h3 class="time">9:28</h3>
+           </div>
+  </div>
+</div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>

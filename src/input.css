@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.broken{
+    font-family: "Rock-Salt", cursive;
+    font-weight: 400px;
+}
